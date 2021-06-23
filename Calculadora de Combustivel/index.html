@@ -5,31 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Calculador de combustivel | Roberto Sales</title>
 </head>
 <body>
+    
     <form class="cab">
-        <h1>Calculadora álcool x gasolina</h1>
+        <h1 class="">Calculadora 
+        <span>álcool x gasolina </span></h1>
     </form>
-    <pre>         Para carros flex e preciso ter cautela ao escolher que forma abastecer.
-         A principal diferença de preço e vantagem entre os dois combustíveis
-         está na proporção preço X desempenho. Para o álcool ser mais
-         vantajoso do que a gasolina, o preçop do litro que custa até 70% do
-         litro da gasolina.
-    </pre><br>
 
-    <p>Preeencha os campos abaixo com o preço dos combustíveis
-    e clique no botão "calcular" <br> para saber qual é a melhor opção."
-    </p>
-
-    <form >
-        <p>Álcool (preço por litro</p>
-        <input type="number" id="etan" min="0" step="0.01" placeholder="Digite aqui!">
-        <p>Gasolina (preço por litro)</p>
-        <input type="text" id="gas" min="0" step="0.01" placeholder="Digite aqui!">
+    <form class="paragrafo">
+        <p> 
+            Para carros flex e preciso ter cautela ao escolher que forma abastecer. <br>
+             A principal diferença de preço e vantagem entre os dois combustíveis <br>
+            está na proporção preço X desempenho. Para o álcool ser mais <br>
+            vantajoso do que a gasolina, o preçop do litro que custa até 70% do <br>
+            litro da gasolina.
+        </p>    
         <br>
-        <button type="button" onclick="myFunction()">Calcular</button>
+        <p>
+            Preeencha os campos abaixo com o preço dos combustíveis
+            e clique no botão "calcular" <br> para saber qual é a melhor opção."
+        </p>
+    </form>
         
+    <form class="caixa">
+        <p>Álcool (preço por litro)</p>
+        
+        <input type="number" id="etan" min="0" step="0.01" placeholder="Digite aqui!">
+        
+        <p>Gasolina (preço por litro)</p>
+        
+        <input type="number" id="gas" min="0" step="0.01" placeholder="Digite aqui!">
+        
+        <br>
+        
+        <button type="button" onclick="myFunction()">Calcular</button>
     </form>
 
     <p id="result"></p>
@@ -47,9 +61,9 @@
             res = ve / vg;
 
             if (res < 0.7){
-                text = "Etanol";
+                text = "Etanol é recomendavel!";
             } else {
-                text = "Gasolina";
+                text = "Gasolina é recomendavel!";
             }
 
             document.getElementById("result").innerHTML = text;           
