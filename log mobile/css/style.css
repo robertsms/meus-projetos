@@ -1,0 +1,51 @@
+div.base{
+    background-image: url(../images/fundo-completo.jpg);
+    width: 324px;
+    height: 576px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo{
+    margin-top: 165px;
+    margin-left:28px;
+    width: 269px;
+    height: 102px;
+    position: absolute;
+}
+
+.facebook{
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    margin-top: 391px;
+    margin-left: 28px;
+    width: 277px;
+    height: 38px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.entrar{
+    background-color:#CE1141 ;
+    color: white;
+    border: solid 1px #CE1141;
+    margin-top: 443px;
+    margin-left: 28px;
+    width: 277px;
+    height: 38px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.cadastro{
+    color: white;
+    font-size: 10px;
+    bottom: 35px;
+    right: 85px;
+    position: absolute;
+}
+
+a{
+    color: white;
+}
