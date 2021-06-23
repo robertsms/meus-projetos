@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculador de combustivel | Roberto Sales</title>
+</head>
+<body>
+    <form class="cab">
+        <h1>Calculadora álcool x gasolina</h1>
+    </form>
+    <pre>         Para carros flex e preciso ter cautela ao escolher que forma abastecer.
+         A principal diferença de preço e vantagem entre os dois combustíveis
+         está na proporção preço X desempenho. Para o álcool ser mais
+         vantajoso do que a gasolina, o preçop do litro que custa até 70% do
+         litro da gasolina.
+    </pre><br>
+
+    <p>Preeencha os campos abaixo com o preço dos combustíveis
+    e clique no botão "calcular" <br> para saber qual é a melhor opção."
+    </p>
+
+    <form >
+        <p>Álcool (preço por litro</p>
+        <input type="number" id="etan" min="0" step="0.01" placeholder="Digite aqui!">
+        <p>Gasolina (preço por litro)</p>
+        <input type="text" id="gas" min="0" step="0.01" placeholder="Digite aqui!">
+        <br>
+        <button type="button" onclick="myFunction()">Calcular</button>
+        
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function myFunction(){
+
+            var res;
+            var text
+
+            let ve = document.getElementById("etan").value;
+
+            let vg = document.getElementById("gas").value;
+
+            res = ve / vg;
+
+            if (res < 0.7){
+                text = "Etanol";
+            } else {
+                text = "Gasolina";
+            }
+
+            document.getElementById("result").innerHTML = text;           
+
+        }
+    </script>
+</body>
+</html>
